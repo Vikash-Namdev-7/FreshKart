@@ -19,7 +19,7 @@ import { stripeWebhooks } from './controllers/orderController.js';
  await connectCloudinary();
 
  //Allow multiple origins
- const allowedOrigins = ['http://localhost:5173', 'https://freshkart-beryl.vercel.app']
+ const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175/', 'http://localhost:5176', 'https://freshkart-beryl.vercel.app']
 
  app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks)
 
